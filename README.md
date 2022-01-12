@@ -32,6 +32,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
+## RSpec 
+Run `bin/rspec spec/features`
+
 ## Final Product
 
 #### Home Page
