@@ -31,3 +31,29 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Final Product
+
+#### Home Page
+!["Products"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/Products.png)
+
+#### Items in Cart
+!["Cart"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/Cart.png)
+
+#### Payment Process
+!["Pay"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/Pay.png)
+
+#### Order Details
+!["Order Details"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/OrderDetails.png)
+
+#### One of the Many Categories 
+!["Categories"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/Categories.png)
+
+#### Admin: Products Section 
+!["Admin Products"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/AdminProducts.png)
+
+#### Admin: Dashboard Details
+!["Admin Dashboard"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/AdminDashboard.png)
+
+#### Admin: Current Categories
+!["Admin Categories"](https://github.com/MorsalN/jungle-rails/blob/master/docs/images/AdminCategories.png)
