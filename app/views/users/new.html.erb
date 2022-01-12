@@ -4,7 +4,8 @@
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  Name: <br> <%= f.text_field :name %> <br><br>
+  name: <br> <%= f.text_field :name %> <br><br>
+  # Last_name: <br> <%= f.text_field :last_name %> <br><br>
   Email:<br> <%= f.text_field :email %> <br><br>
   Password:<br> <%= f.password_field :password %> <br><br>
   Password Confirmation: <br><%= f.password_field :password_confirmation %> <br><br>
