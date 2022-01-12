@@ -1,11 +1,9 @@
 require 'rails_helper'
-require 'capybara/poltergeist'
 
-RSpec.feature "ProductDetails", type: :feature, js: true do
-
-
+RSpec.feature "AddToCarts", type: :feature, js: true do
+  
   # SETUP
-  before :each do
+   before :each do
     @category = Category.create! name: 'Apparel'
 
     10.times do |n|
@@ -19,19 +17,24 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     end
   end
 
-  scenario "They see product details" do
+  scenario "Add +1 to cart" do
     # ACT
     visit root_path
 
-    first('article.product').click_link('Details')
+    # first('article.product').click_button('Add')
+    # sleep 2
+    product = page.first('article.product')     
+    button = product.find_button('Add')      
+    button.click
+    sleep 2
 
     # DEBUG / VERIFY
     # commented out b/c it's for debugging only
-    save_screenshot "product_details.png"
+    save_screenshot "add_to_cart.png"
 
     # VERIFY
-    expect(page).to have_css '.product-detail'
-  end
-
-
+    within ('#navbar') do
+      expect(page).to have_content 'My Cart (1)'
+    end
+  end 
 end
